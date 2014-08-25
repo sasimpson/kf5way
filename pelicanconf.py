@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = u'KF5WAY'
-SITENAME = u'KF5WAY'
+AUTHOR = u''
+SITENAME = u''
 # SITEURL = 'http://localhost:8000'
 SITEURL = 'http://blog.kf5way.com'
 # THEME = 'notmyidea'
