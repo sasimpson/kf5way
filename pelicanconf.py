@@ -8,7 +8,7 @@ SITEURL = 'http://blog.kf5way.com'
 # THEME = 'notmyidea'
 THEME = 'pelican-svbhack'
 TIMEZONE = 'America/Chicago'
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'files']
 
 DEFAULT_LANG = u'en'
 
