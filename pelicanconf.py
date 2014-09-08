@@ -16,6 +16,7 @@ DEFAULT_LANG = u'en'
 LINKS =  (
             ('QRZ', 'http://www.qrz.com'),
             ('ARRL', 'http://www.arrl.org'),
+            ('KARS', 'http://www.kb5tx.org'),
          )
 
 # MENUITEMS = (('',''),)
