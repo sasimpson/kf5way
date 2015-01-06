@@ -3,9 +3,7 @@
 
 AUTHOR = u''
 SITENAME = u''
-# SITEURL = 'http://localhost:8000'
 SITEURL = 'http://blog.kf5way.com'
-# THEME = 'notmyidea'
 THEME = 'pelican-svbhack'
 TIMEZONE = 'America/Chicago'
 STATIC_PATHS = ['images', 'files']
