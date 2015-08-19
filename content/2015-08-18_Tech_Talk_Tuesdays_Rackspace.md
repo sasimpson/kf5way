@@ -6,4 +6,4 @@ think it was a good turn out and some good questions were asked.  I setup my sta
 of the "Factory" at work and was able to make a couple contacts and show people what operating
 digital modes looked like.  
 
-Here are the slides
+[Here]({filename}/files/RS_Radio_Tech_Talk.pdf) are the slides
