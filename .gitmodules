@@ -1,0 +1,3 @@
+[submodule "themes/poopshow"]
+	path = themes/poopshow
+	url = https://github.com/esell/poopshow.git
