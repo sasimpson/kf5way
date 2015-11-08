@@ -1,6 +1,8 @@
-Title: New Antenna
-Date: 2014-07-10
-Category: Antennas, HF
++++
+title = "New Antenna"
+date = "2014-07-10"
+categories = ["antennas", "hf"]
++++
 
 [Cheapham.com](http://cheapham.com) had the LDG S9v18 antenna for $35 and the
 ground plane plate for $25, so I got that with some RG213 and put up a vertical!

@@ -1,0 +1,9 @@
+baseurl = "http://blog.kf5way.com/"
+languageCode = "en-us"
+title = "kf5way"
+theme = "poopshow"
+[Params]
+    headerimg = "header_radio.jpg"
+    blogHeader = "<span style=\"font-size: 24pt;\">blog.<strong>kf5way</strong>.com</span>"
+    tagline = ""
+    githubUrl = "http://github.com/sasimpson"
