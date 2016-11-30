@@ -1,10 +1,11 @@
-baseurl = "http://blog.kf5way.com/"
+baseurl = "http://blog.ke5eo.com/"
 languageCode = "en-us"
 title = "kf5way"
 theme = "poopshow"
 [Params]
     headerimg = "header_radio.jpg"
-    blogHeader = "<span style=\"font-size: 24pt;\">blog.<strong>kf5way</strong>.com</span>"
+    blogHeader = "<span style=\"font-size: 24pt;\">blog.<strong>ke5eo</strong>.com</span>"
     tagline = ""
     githubUrl = "http://github.com/sasimpson"
+    contactEmail = "ke5eo@arrl.net"
     disqusShortname = "kf5way"
