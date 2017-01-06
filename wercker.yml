@@ -11,8 +11,8 @@ deploy:
         - script:
             name: ls output
             code: |
-            ls -haltr /pipeline/output
+                ls -haltr /pipeline/output
         - script:
             name: ls source
             code: |
-            ls -haltr /pipeline/source
+                ls -haltr /pipeline/source
