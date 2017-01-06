@@ -10,6 +10,7 @@ deploy:
     box: python
     steps:
         - pip-install: 
+            requirements_file: ""
             packages_list: "swiftly"
         - script:
             name: ls output
