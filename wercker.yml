@@ -9,8 +9,8 @@ build:
 deploy:
     box: python
     steps:
-        - pip-install:
-            swiftly
+        - pip-install: 
+            packages_list: "swiftly"
         - script:
             name: ls output
             code: |
