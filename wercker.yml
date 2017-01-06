@@ -1,14 +1,13 @@
 box: debian
 build:
     steps: 
-        - arjen/hugo-build@1.14.1
+        - arjen/hugo-build@1.14.1:
+            disable_pygments: true
         
 deploy:
     box: python
     steps:
-        - sasimpson/rackspace-cloudfiles-swiftly@0.0.2
-        - script:
-            name: python version
-            code: |
-                echo "python version $(python --version) running"
-                echo "pip version $(pip --version) running"
+        - sasimpson/rackspace-cloudfiles-swiftly@0.0.2:
+            region: DFW
+            container: kf5way
+            path: public/
