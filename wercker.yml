@@ -16,6 +16,11 @@ deploy:
             name: ls source
             code: |
                 ls -haltr /pipeline/source
-        - sasimpson/rackspace-cloudfiles-swiftly@0.0.2:
-            path: public
-            region: DFW
+        - script:
+            name: pip version
+            code: | 
+                echo "pip version $(pip --version) running"
+        - script: 
+            name: pip freeze
+            code: |
+                echo "pip freeze"
