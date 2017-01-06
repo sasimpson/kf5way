@@ -16,6 +16,6 @@ deploy:
             name: ls source
             code: |
                 ls -haltr /pipeline/source
-        - sasimpson/rackspace-cloudfiles-swiftly@0.0.1:
+        - sasimpson/rackspace-cloudfiles-swiftly@0.0.2:
             path: public
             region: DFW
