@@ -1,3 +1,4 @@
+box: google/golang
 build:
     steps: 
         - arjen/hugo-build@1.14.1
@@ -7,19 +8,4 @@ build:
                 ls -haltr /pipeline/source/public
 deploy:
     steps:
-        - script:
-            name: ls output
-            code: |
-                ls -haltr /pipeline/output
-        - script:
-            name: ls source
-            code: |
-                ls -haltr /pipeline/source
-        - script:
-            name: pip version
-            code: | 
-                echo "pip version $(pip --version) running"
-        - script: 
-            name: pip freeze
-            code: |
-                echo "pip freeze"
+        - sasimpson/rackspace-cloudfiles-swiftly@0.0.2
