@@ -2,24 +2,11 @@ box: debian
 build:
     steps: 
         - arjen/hugo-build@1.14.1
-        - script:
-            name: ls stuff
-            code: |
-                ls -haltr /pipeline/source/public
+        
 deploy:
     box: python
     steps:
-        - pip-install: 
-            requirements_file: ""
-            packages_list: "swiftly"
-        - script:
-            name: ls output
-            code: |
-                ls -haltr /pipeline/output
-        - script:
-            name: ls source
-            code: |
-                ls -haltr /pipeline/source
+        - sasimpson/rackspace-cloudfiles-swiftly@0.0.2
         - script:
             name: python version
             code: |
