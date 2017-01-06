@@ -1,6 +1,8 @@
-Title: Elecraft KX3
-Date: 2014-08-06
-Categories: HF
++++
+title = "Elecraft KX3"
+date = "2014-08-06"
+categories = ["hf"]
++++
 
 Finally got the radio I wanted, an Elecraft KX3 with the KXPA100 amp. I also got a few of the addons: the roofing filters, realtime clock+charger, and ATU for both the amp and the radio.  I think I will order the KXPD3 soon and try to figure out how to make a desktop base for it.  I'm very happy with the receive quality and having the RX i/q out is awesome.  Now I need to find a soundcard that can do better than 44kHz of bandwidth!
 
@@ -11,4 +13,3 @@ Also, even though I read the manual probably ten times before I even purchased t
 The tuner on this radio is excellent.  The ATU in the KXPA100 tunes up my vertical 1:1 on 20m and 1.5:1 or lower on everything else 40m through 6m.  For field day I purchased an [endfed hf matchbox antenna](http://www.earchi.org/proj_homebrew.html) from the Emergency Amateur Radio Club of Hawai'i and didn't have much luck with the LDG AT-897plus.  However, with the tuner in the KX3 it was able to tune 40m to 6m under 1.5 SWR, no problems.  Both tuners are fast and efficient.  Excited to use this radio QRP with this little matchbox antenna or some random wire.  
 
 I've only had the radio for a week or so, but I've been able to make PSK31 contacts in Fiji and Australia plus phone contacts to Slovenia!  My heil micro traveler headset doesn't work very well for it, but my Turtle Beach X12 headset seems to be working great.  
-

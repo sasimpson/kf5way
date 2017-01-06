@@ -1,6 +1,8 @@
-Title: FT-897D Data Interface Circuit
-Date: 2014-01-07
-Category: DIY
++++
+title = "FT-897D Data Interface Circuit"
+date = "2014-01-07"
+categories = ["diy"]
++++
 
 Data modes really interest me, especially PSK31.  When I got my FT-897D I surveyed all the options for how to connect my radio to my PC.  Upon purchase, I got the RT Systems CAT cable (USB-62), but that only provided remote control and programming.  My options at this point were to purchase a SignaLink, RigBlaster or the like OR build something myself.  What I had read seemed to indicate the FT-897's "Data Port" was simply a way for the audio to get to the computer w/o being affected by volume or the headphones or speaker plugged in.  I was using the speaker output, but when the headphones were plugged in they muted it.  It was also affected by changing the volume.  There was also no way to input the audio to reply using my computer.  
 
@@ -8,7 +10,7 @@ Most of what I read online said that you could take an old PS/2 cable, like an e
 
 Here is a sample circuit:
 
-![Data Interface Circuit]({filename}/images/audio_circuit.png)
+![Data Interface Circuit](/img/audio_circuit.png)
 
 This can be enclosed in a project box, which makes it look real slick.  
 

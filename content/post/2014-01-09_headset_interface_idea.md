@@ -1,6 +1,8 @@
-Title: FT-897D Gaming Headset Interface Ideas
-Date: 2014-01-09
-Category: DIY
++++
+title = "FT-897D Gaming Headset Interface Ideas"
+date = "2014-01-09"
+categories = ["diy"]
++++
 
 I've got a [Turtle Beach X12](http://www.turtlebeach.com/product-detail/xbox-headsets/ear-force-x12/56) gaming headset.  It comes with a digital interface for the XBox and PC.  Works on the PS3 as well.  It's a really nice headset, one of the only ones I've been comfortable wearing.  Most over ear headphones tend to smash my earlobes and that gets painful after a while.  These ones fit nicely over my ears so I don't have that problem.  When I plug them into my computer I need to plug the mic and headphone connector in, as well as the USB connection.  I assume this is for powering something or another.  
 
