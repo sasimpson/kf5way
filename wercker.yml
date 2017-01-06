@@ -1,0 +1,5 @@
+box: wercker/default
+build:
+    steps: 
+        - arjen/hugo-build@1.14.1
+        - sasimpson/rackspace-cloudfiles-swiftly@0.0.1
