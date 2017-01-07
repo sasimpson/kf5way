@@ -1,11 +1,25 @@
 baseurl = "http://blog.ke5eo.com/"
 languageCode = "en-us"
 title = "ke5eo"
-theme = "poopshow"
+theme = "rocktopus"
 [Params]
     headerimg = "header_radio.jpg"
     blogHeader = "<span style=\"font-size: 24pt;\">blog.<strong>ke5eo</strong>.com</span>"
     tagline = "-.- . ..... . ---"
     githubUrl = "http://github.com/sasimpson"
     contactEmail = "ke5eo@arrl.net"
+    contactTwitter = "scotty"
     disqusShortname = "kf5way"
+
+[menu]
+    [[menu.nav]]
+    identifier = "about"
+    name = "about"
+    url = "/about"
+    weight = 0
+
+    [[menu.nav]]
+    identifier = "code"
+    name = "code"
+    url = "https://github.com/sasimpson"
+    weight = 1
