@@ -9,6 +9,9 @@ build:
 deploy-to-cloudfiles:
     box: python:2.7
     steps:
+        - script:
+            name: ls output
+            code: ls $WERCKER_OUTPUT_DIR
         - pip-install:
             requirements_file: ""
             packages_list: "swiftly six"
