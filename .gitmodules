@@ -1,13 +1,3 @@
-<<<<<<< HEAD
 [submodule "themes/poopshow"]
 	path = themes/poopshow
 	url = https://github.com/esell/poopshow.git
-=======
-[submodule "themes/poopshow"]
-	path = themes/poopshow
-	url = https://github.com/esell/poopshow.git
-
-[submodule "themes/rocktopus"]
-	path = themes/rocktopus
-	url = https://github.com/esell/rocktopus.git
->>>>>>> d70efdab27d6a244377772678191a60639e18f49
