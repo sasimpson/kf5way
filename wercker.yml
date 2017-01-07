@@ -8,7 +8,7 @@ build:
             code: |
                 go version
 deploy:
-    box: python
+    box: python:2.7-slim
     steps:
 #        - sasimpson/rackspace-cloudfiles-swiftly@0.0.2:
 #            region: DFW
