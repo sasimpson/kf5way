@@ -2,10 +2,12 @@ baseurl = "http://blog.ke5eo.com/"
 languageCode = "en-us"
 title = "ke5eo"
 theme = "poopshow"
-[Params]
+
+[params]
     headerimg = "header_radio.jpg"
     blogHeader = "<span style=\"font-size: 24pt;\">blog.<strong>ke5eo</strong>.com</span>"
     tagline = "-.- . ..... . ---"
     githubUrl = "http://github.com/sasimpson"
     contactEmail = "ke5eo@arrl.net"
     disqusShortname = "kf5way"
+    contactTwitter = "scotty"
