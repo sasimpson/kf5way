@@ -12,25 +12,25 @@ build:
             theme: poopshow
             disable_pygments: true
             flags: -v
-        - script: 
-            name: store output
-            code: |
-                tar -cvf output.tar $WERCKER_SOURCE_DIR/*
-                ls -l $WERCKER_SOURCE_DIR
-                ls -l $WERCKER_OUTPUT_DIR
+        # - script: 
+        #     name: store output
+        #     code: |
+        #         tar -cvf output.tar $WERCKER_SOURCE_DIR/*
+        #         ls -l $WERCKER_SOURCE_DIR
+        #         ls -l $WERCKER_OUTPUT_DIR
 
         
 deploy-to-cloudfiles:
     box: python:2.7
     steps:
+        # - script:
+        #     name: ls output
+        #     code: |
+        #         ls -l $WERCKER_OUTPUT_DIR
+        #         ls -l $WERCKER_SOURCE_DIR
+        - pip-install:
+            requirements_file: ""
+            packages_list: "swiftly six"
         - script:
-            name: ls output
-            code: |
-                ls -l $WERCKER_OUTPUT_DIR
-                ls -l $WERCKER_SOURCE_DIR
-#        - pip-install:
-#            requirements_file: ""
-#            packages_list: "swiftly six"
-#        - script:
-#            name: call swiftly
-#            code: swiftly --verbose --region $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_REGION put -i ./public $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_CONTAINER 
+            name: call swiftly
+            code: swiftly --verbose --region $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_REGION put -i ./public $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_CONTAINER 
