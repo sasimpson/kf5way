@@ -9,25 +9,13 @@ build:
                 git submodule update --init --recursive
         - arjen/hugo-build:
             version: "0.18.1"
-            theme: poopshow
+            theme: rocktopus
             disable_pygments: true
             flags: -v
-        # - script: 
-        #     name: store output
-        #     code: |
-        #         tar -cvf output.tar $WERCKER_SOURCE_DIR/*
-        #         ls -l $WERCKER_SOURCE_DIR
-        #         ls -l $WERCKER_OUTPUT_DIR
-
         
 deploy-to-cloudfiles:
     box: python:2.7
     steps:
-        # - script:
-        #     name: ls output
-        #     code: |
-        #         ls -l $WERCKER_OUTPUT_DIR
-        #         ls -l $WERCKER_SOURCE_DIR
         - pip-install:
             requirements_file: ""
             packages_list: "swiftly six"
