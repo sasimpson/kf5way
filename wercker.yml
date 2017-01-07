@@ -4,20 +4,25 @@ build:
     box: google/golang
     steps: 
         - arjen/hugo-build@1.14.1:
+            theme: poopshow
             disable_pygments: true
+        - script: 
+            name: store output
+            code: |
+                tar -cvf output.tar $WERCKER_OUTPUT_DIR/*
+                cp output.tar $WERCKER_SOURCE_DIR
         
 deploy-to-cloudfiles:
     box: python:2.7
     steps:
-        - pip-install:
-            requirements_file: ""
-            packages_list: "swiftly six"
         - script:
-            name: python version
-            code: python --version
-        - script:
-            name: pip freeze
-            code: pip freeze
-        - script:
-            name: call swiftly
-            code: swiftly --region $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_REGION put -i ./public $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_CONTAINER
+            name: ls output
+            code: |
+                ls -l $WERCKER_OUTPUT_DIR
+                ls -l $WERCKER_SOURCE_DIR
+#        - pip-install:
+#            requirements_file: ""
+#            packages_list: "swiftly six"
+#        - script:
+#            name: call swiftly
+#            code: swiftly --verbose --region $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_REGION put -i ./public $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_CONTAINER 
