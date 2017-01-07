@@ -1,4 +1,4 @@
-box: alpine:latest
+box: busybox
 
 build:
     box: google/golang
@@ -10,6 +10,7 @@ build:
             code: |
                 go version
 deploy:
+    box: python:2.7
     steps:
         - pip-install:
             requirements_file: ""
