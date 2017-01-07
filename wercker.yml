@@ -5,10 +5,7 @@ build:
     steps: 
         - arjen/hugo-build@1.14.1:
             disable_pygments: true
-        - script:
-            name: go version
-            code: |
-                go version
+        
 deploy:
     box: python:2.7
     steps:
@@ -21,9 +18,10 @@ deploy:
 #            path: public/
         - script:
             name: python version
-            code: |
-                python --version
+            code: python --version
+        - script:
+            name: pip freeze
+            code: pip freeze
         - script:
             name: swiftly version
-            code: |
-                swiftly --version
+            code: which swiftly
