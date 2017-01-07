@@ -1,7 +1,6 @@
 +++
 date = "2017-01-06T19:53:27-06:00"
 title = "Software Update"
-draft = true
 categories = ["digital", "computers"]
 +++
 
