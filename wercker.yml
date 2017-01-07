@@ -2,11 +2,16 @@ box: busybox
 
 build:
     box: google/golang
-    steps: 
+    steps:
+        - script:
+            name: initialize git submodules
+            code: |
+                git submodule update --init --recursive
         - arjen/hugo-build:
             version: "0.18.1"
             theme: poopshow
             disable_pygments: true
+            flags: -v
         - script: 
             name: store output
             code: |
