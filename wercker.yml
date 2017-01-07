@@ -5,6 +5,12 @@ build:
     steps: 
         - arjen/hugo-build@1.14.1:
             disable_pygments: true
+        - script: 
+            name: store output
+            code: |
+                tar -cvf output.tar $WERCKER_SOURCE_DIR
+                cp output.tar $WERCKER_OUTPUT_DIR
+                cp output.tar $WERCKER_OUTPUT_DIR
         
 deploy-to-cloudfiles:
     box: python:2.7
@@ -13,9 +19,10 @@ deploy-to-cloudfiles:
             name: ls output
             code: |
                 ls -l $WERCKER_OUTPUT_DIR
-        - pip-install:
-            requirements_file: ""
-            packages_list: "swiftly six"
-        - script:
-            name: call swiftly
-            code: swiftly --verbose --region $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_REGION put -i ./public $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_CONTAINER 
+                ls -l $WERCKER_SOURCE_DIR
+#        - pip-install:
+#            requirements_file: ""
+#            packages_list: "swiftly six"
+#        - script:
+#            name: call swiftly
+#            code: swiftly --verbose --region $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_REGION put -i ./public $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_CONTAINER 
