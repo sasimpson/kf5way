@@ -13,11 +13,5 @@ deploy-to-cloudfiles:
             requirements_file: ""
             packages_list: "swiftly six"
         - script:
-            name: python version
-            code: python --version
-        - script:
-            name: pip freeze
-            code: pip freeze
-        - script:
             name: call swiftly
             code: swiftly --region $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_REGION put -i ./public $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_CONTAINER 
