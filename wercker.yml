@@ -8,7 +8,7 @@ build:
             code: |
                 echo "go version"       
 deploy:
-    box: wercker/python
+    box: python
     steps:
 #        - sasimpson/rackspace-cloudfiles-swiftly@0.0.2:
 #            region: DFW
