@@ -1,7 +1,7 @@
 baseurl = "http://blog.ke5eo.com/"
 languageCode = "en-us"
 title = "ke5eo"
-theme = "rocktopus"
+theme = "poopshow"
 paginate = 5
 
 [params]
@@ -24,8 +24,3 @@ paginate = 5
         name = "code"
         url = "https://github.com/sasimpson"
         weight = 1
-    [[menu.nav]]
-        identifier = "contact"
-        name = "contact"
-        url = "/contact"
-        weight = 2
