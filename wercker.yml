@@ -24,4 +24,4 @@ deploy:
             code: pip freeze
         - script:
             name: swiftly version
-            code: which swiftly
+            code: $(which swiftly) --version
