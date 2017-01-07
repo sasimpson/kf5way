@@ -9,8 +9,11 @@ build:
         - script: 
             name: store output
             code: |
-                tar -cvf output.tar $WERCKER_OUTPUT_DIR/*
+                tar -cvf output.tar $WERCKER_SOURCE_DIR/*
                 cp output.tar $WERCKER_SOURCE_DIR
+                ls -l $WERCKER_SOURCE_DIR
+                ls -l $WERCKER_OUTPUT_DIR
+
         
 deploy-to-cloudfiles:
     box: python:2.7
