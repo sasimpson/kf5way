@@ -1,18 +1,23 @@
-box: google/golang
+box: busybox
+
 build:
+    box: google/golang
     steps: 
-        - arjen/hugo-build@1.14.1
-        - script:
-            name: go version
-            code: |
-                echo "go version"
-deploy:
-    box: wercker/python
+        - arjen/hugo-build@1.14.1:
+            disable_pygments: true
+        
+deploy-to-cloudfiles:
+    box: python:2.7
     steps:
+        - pip-install:
+            requirements_file: ""
+            packages_list: "swiftly six"
         - script:
             name: python version
-            code: |
-                echo "python --version"
-#        - sasimpson/rackspace-cloudfiles-swiftly@0.0.2:
-#            path: public
-#            region: DFW
+            code: python --version
+        - script:
+            name: pip freeze
+            code: pip freeze
+        - script:
+            name: call swiftly
+            code: swiftly --region $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_REGION put -i ./public $WERCKER_RACKSPACE_CLOUDFILES_SWIFTLY_CONTAINER
