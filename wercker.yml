@@ -9,7 +9,7 @@ build:
                 git submodule update --init --recursive
         - arjen/hugo-build:
             version: "0.18.1"
-            theme: poopshow
+            theme: rocktopus
             disable_pygments: true
             flags: -v
         

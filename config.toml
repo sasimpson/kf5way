@@ -1,7 +1,8 @@
 baseurl = "http://blog.ke5eo.com/"
 languageCode = "en-us"
 title = "ke5eo"
-theme = "poopshow"
+theme = "rocktopus"
+paginate = 5
 
 [params]
     headerimg = "header_radio.jpg"
@@ -11,4 +12,20 @@ theme = "poopshow"
     contactEmail = "ke5eo@arrl.net"
     contactTwitter = "scotty"
     disqusShortname = "kf5way"
-    aboutLink = "about"
+
+[menu]
+    [[menu.nav]]
+        identifier = "about"
+        name = "about"
+        url = "/about"
+        weight = 0
+    [[menu.nav]]
+        identifier = "code"
+        name = "code"
+        url = "https://github.com/sasimpson"
+        weight = 1
+    [[menu.nav]]
+        identifier = "contact"
+        name = "contact"
+        url = "/contact"
+        weight = 2
