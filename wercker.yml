@@ -6,7 +6,7 @@ build:
         - script:
             name: go version
             code: |
-                echo "go version"       
+                go version
 deploy:
     box: python
     steps:
@@ -17,4 +17,4 @@ deploy:
         - script:
             name: python version
             code: |
-                echo "python --version"
+                python --version
