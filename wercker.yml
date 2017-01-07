@@ -10,7 +10,7 @@ build:
 deploy:
     box: python:2.7-slim
     steps:
-        - pip-install
+        - pip-install:
             requirements_file: ""
             packages_list: "swiftly"
 #        - sasimpson/rackspace-cloudfiles-swiftly@0.0.2:
