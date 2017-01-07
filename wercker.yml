@@ -3,14 +3,14 @@ box: busybox
 build:
     box: google/golang
     steps: 
-        - arjen/hugo-build@1.14.1:
+        - arjen/hugo-build:
+            version: "0.18.1"
             theme: poopshow
             disable_pygments: true
         - script: 
             name: store output
             code: |
                 tar -cvf output.tar $WERCKER_SOURCE_DIR/*
-                cp output.tar $WERCKER_SOURCE_DIR
                 ls -l $WERCKER_SOURCE_DIR
                 ls -l $WERCKER_OUTPUT_DIR
 
