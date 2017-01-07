@@ -1,3 +1,7 @@
 [submodule "themes/poopshow"]
 	path = themes/poopshow
 	url = https://github.com/esell/poopshow.git
+
+[submodule "themes/rocktopus"]
+	path = themes/rocktopus
+	url = https://github.com/esell/rocktopus.git
