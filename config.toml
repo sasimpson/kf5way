@@ -2,7 +2,6 @@ baseurl = "http://blog.ke5eo.com/"
 languageCode = "en-us"
 title = "ke5eo"
 theme = "poopshow"
-paginate = 5
 
 [params]
     headerimg = "header_radio.jpg"
