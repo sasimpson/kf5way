@@ -10,7 +10,6 @@ theme = "poopshow"
     githubUrl = "http://github.com/sasimpson"
     contactEmail = "ke5eo@arrl.net"
     contactTwitter = "scotty"
-    disqusShortname = "kf5way"
 
 [menu]
     [[menu.nav]]

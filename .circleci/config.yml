@@ -15,7 +15,7 @@ jobs:
 
       - run: hugo version
       #run hugo to generate with theme
-      - run: hugo -t terminal
+      - run: hugo
 
       - persist_to_workspace:
           root: /root/project
