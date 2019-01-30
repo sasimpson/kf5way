@@ -11,7 +11,7 @@ jobs:
       - checkout
 
       # update the theme submodule
-      - run: git submodule update --init themes/poopshow
+      - run: git submodule update --init themes/terminal
 
       - run: hugo version
       #run hugo to generate with theme
