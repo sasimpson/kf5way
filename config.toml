@@ -12,12 +12,12 @@ theme = "poopshow"
     contactTwitter = "scotty"
 
 [menu]
-    [[menu.nav]]
+    [[menu.main]]
         identifier = "about"
         name = "about"
         url = "/about"
         weight = 0
-    [[menu.nav]]
+    [[menu.main]]
         identifier = "code"
         name = "code"
         url = "https://github.com/sasimpson"
