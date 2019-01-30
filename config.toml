@@ -1,7 +1,7 @@
 baseurl = "http://blog.ke5eo.com"
 languageCode = "en-us"
 title = "ke5eo"
-theme = "poopshow"
+theme = "terminal"
 
 [params]
     headerimg = "header_radio.jpg"
@@ -10,6 +10,8 @@ theme = "poopshow"
     githubUrl = "http://github.com/sasimpson"
     contactEmail = "ke5eo@arrl.net"
     contactTwitter = "scotty"
+    themeColor = "red"
+
 
 [menu]
     [[menu.main]]
