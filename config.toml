@@ -11,6 +11,7 @@ theme = "terminal"
     contactEmail = "ke5eo@arrl.net"
     contactTwitter = "scotty"
     themeColor = "red"
+    contentTypeName = "post"
 
 
 [menu]
